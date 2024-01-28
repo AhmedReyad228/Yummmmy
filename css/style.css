@@ -1,0 +1,325 @@
+/* ? ======> Start customize ======> */
+
+:root{
+    --main-background:  #0D0D0D;
+    --main-color: #000;
+    --second-color: #fff;
+    --main-font: ;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6,span,p,a{
+    color: #fff;
+}
+
+body{
+    background-color: var(--main-background);
+    overflow: hidden;
+}
+
+input{
+    background-color: var(--main-background) !important;
+    border: 1px solid #fff ;
+    color: var(--second-color) !important;
+}
+
+::placeholder{
+    color: #ffffff90 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+     appearance: none;
+     display: none;
+}
+
+
+/* ? ======> End customize ======> */
+
+
+/* ! ======> Start Side bar ======> */
+
+.side-bar{
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    display: flex;
+}
+
+.side-bar .side-links a{
+    display: block;
+    font-size: 18px;
+    margin-block: 10px;
+}
+
+.side-bar .side-links .links{
+    width: fit-content;
+}
+
+.side-bar .side-links{
+    padding: 20px;
+    background-color: var(--main-color);
+    width: 250px;
+    display: none;
+    white-space: nowrap;
+    position: relative;
+}
+
+.side-bar .side-links .social{
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.side-bar .side-open{
+    width: 70px;
+    background-color: var(--second-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.side-bar .side-open .social{
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+
+/* ! ======> End Side bar ======> */
+
+/* ? ======> Staet Meals On start ======> */
+
+.layer{
+    background-color: #faf8f897;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.myImg{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.myImg:hover .layer{
+    top: 0;
+    left: 0;
+}
+
+
+/* ? ======> End Meals On start ======> */
+
+/* ! ======> Start Details ======> */
+
+.areaName span{
+    color: #09c;
+    font-size: 22px;
+}
+
+.sideName span{
+    color: yellowgreen;
+    font-size: 22px;
+}
+
+.strTags{
+    width: fit-content;
+}
+
+/* ! ======> End Details ======> */
+
+
+/* ? ======> Start Meals On Categories ======> */
+
+.layerCat{
+    background-color: #faf8f897;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 7px;
+    transition: all .5s;
+}
+
+.myImgCat{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.myImgCat:hover .layerCat{
+    top: 0;
+    left: 0;
+}
+
+/* ? ======> End Meals On Categories ======> */
+
+
+/* * ======> Area ======> */
+
+.myHouse{
+    font-size: 70px !important;
+}
+
+#ingredient{
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+#ingredient .fa-drumstick-bite{
+    font-size: 60px !important;
+}
+
+/* * ======> Area ======> */
+
+
+
+/* ! ======> Start Contact ======> */
+
+.formParent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formParent button{
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: transparent;
+    color: green;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.pass1{
+    position: relative;
+}
+
+.checkBox1{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.pass2{
+    position: relative;
+}
+
+.checkBox2{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#submitBTN{
+    background-color: ;
+}
+
+/* ! ======> End Contact ======> */
+
+
+
+/* ? ======> Start Loader ======> */
+
+.loading{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+
+.loading1{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.loading2{
+    width: 100%;
+    height: 100%;
+    top: 15%    ;
+    left: 0;
+    position: fixed;
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.loader {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 
+
+
+/* ? ======> End Loader ======> */
+
+
+
+
+
+
+
+
+
